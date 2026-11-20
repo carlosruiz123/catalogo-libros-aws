@@ -20,6 +20,7 @@ function crearApp(repositorio) {
       status: 'ok',
       servicio: pkg.name,
       version: process.env.APP_VERSION || pkg.version,
+      despliegue: 'cd-github-actions',
       commit: process.env.COMMIT_SHA || 'local',
     });
   });

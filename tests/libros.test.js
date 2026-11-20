@@ -63,7 +63,8 @@ describe('API REST Catalogo de Libros', () => {
     expect(res.status).toBe(200);
     expect(res.body.status).toBe('ok');
     expect(res.body.servicio).toBe('catalogo-libros-api');
-    expect(res.body.version).toBe('1.0.0');
+    expect(res.body.version).toBe('1.1.0');
+    expect(res.body.despliegue).toBe('cd-github-actions');
   });
 
   test('POST /libros crea un libro valido y responde 201', async () => {
