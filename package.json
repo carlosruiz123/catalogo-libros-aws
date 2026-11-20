@@ -1,0 +1,19 @@
+{
+  "name": "catalogo-libros-api",
+  "version": "1.0.0",
+  "description": "API REST para gestionar un catalogo academico de libros en AWS EC2 y RDS",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "jest --verbose"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mysql2": "^3.11.5"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
+  }
+}
